@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/marge"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textSize="16sp"
+        android:background="@color/purple_200"
+        />
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapCharacters"
+        android:textAllCaps="true"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sexo"
+        android:textSize="16sp"
+        android:background="@color/purple_200"
+        />
+
+    <RadioGroup
+        android:id="@+id/rdbSexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/rdbMasculino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/masculino"
+            android:layout_weight="1"
+            />
+
+        <RadioButton
+            android:id="@+id/rdbFeminino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/feminino"
+            android:layout_weight="1"
+            />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textSize="16sp"
+        android:background="@color/purple_200"
+        />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/telefone"
+        android:textSize="16sp"
+        android:background="@color/purple_200"
+        />
+
+    <EditText
+        android:id="@+id/edtTelefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/preferencia"
+        android:textSize="16sp"
+        android:background="@color/purple_200"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <CheckBox
+            android:id="@+id/chkMusica"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/musica"
+            android:textSize="16sp"
+            android:textColor="@android:color/tertiary_text_dark"
+            />
+        <CheckBox
+            android:id="@+id/chkCinema"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cinema"
+            android:textSize="16sp"
+            android:textColor="@android:color/tertiary_text_dark"
+            />
+        <CheckBox
+            android:id="@+id/chkEsporte"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/esporte"
+            android:textSize="16sp"
+            android:textColor="@android:color/tertiary_text_dark"
+            />
+
+        <CheckBox
+            android:id="@+id/chkGastronomia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/gastronomia"
+            android:textColor="@android:color/tertiary_text_dark"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/notificacao"
+        android:textSize="16sp"
+        android:background="@color/purple_200"
+        />
+
+    <Switch
+        android:id="@+id/swtNotificacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/tertiary_text_dark"
+        tools:ignore="UseSwitchCompatOrMaterialXml"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/btnExibir"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/exibir"
+            android:textSize="16sp"
+            android:layout_margin="@dimen/marge"
+            />
+        <Button
+            android:id="@+id/btnLimpar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/marge"
+            android:text="@string/limpar"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
